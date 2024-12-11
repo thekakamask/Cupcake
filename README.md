@@ -2,7 +2,7 @@
 **Cupcake** is a modern, interactive Android app that allows users to customize and order cupcakes. This app highlights Android development best practices, such as Jetpack Compose, ViewModel, and reactive state management using StateFlow.
 
 ## 🚀 **Features**
-   -🛒 **Customizing Orders**
+   - 🛒 **Customizing Orders**
       - **Quantity**: Select from quantity options (1, 6 or 12 cupcakes).
       - **Flavors**: Choose from several flavors like vanilla, chocolate, or salted caramel.
       - **Pickup Date**: Schedule a pickup date (with surcharge for same-day pickup).
@@ -17,6 +17,8 @@
       - **Flavor Screen**: Choose your desired flavor.
       - **Pickup Screen**: Select a pickup date from the available options.
       - **Summary Screen**: Review the full order details before confirmation.
+   - 🗂️ **Enhanced Navigation**
+      - Each screen includes a top AppBar with a back button, providing seamless navigation to the previous screen. This mirrors the functionality of the device's back button for a consistent user experience.
    - 🎨 **Modern Interface**
       - Built with Jetpack Compose for a smooth, declarative user experience.
       - Integration of Material 3 for an aesthetic and coherent design.
@@ -41,6 +43,7 @@
       - **SelectOptionScreen**: Enables flavor and pickup date selection.
       - **OrderSummaryScreen**: Displays the full summary of the order.
    - Manages navigation between screens using the Navigation Component.
+   - Includes an AppBar with back navigation functionality for each screen.
 3. **Components**:
    - Contains reusable composables like FormattedPriceLabel.
    - Defines enumerations for navigation (CupcakeScreenEnum).
@@ -52,11 +55,13 @@
 
 
 ## 🚀 **How to Use**
-1. Launch the App: Open the Cupcake App on a device or emulator.
-2. Personalize Your Order:
+1. **Launch the App**: Open the Cupcake App on a device or emulator.
+2. **Personalize Your Order**:
    - Choose the number of cupcakes you want.
    - Select a flavor and pickup date.
-3. Review Your Order:
+3. **Navigate Between Screens**:
+   - Use the AppBar back button or device back button to return to the previous screen.
+4. **Review Your Order**:
    - View the order summary, including the total price.
    - Confirm or cancel as needed.
-4. Enjoy: Experiment with different configurations to explore the app's features!
+5. **Enjoy**: Experiment with different configurations to explore the app's features!
