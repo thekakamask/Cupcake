@@ -1,6 +1,6 @@
 package com.dcac.cupcake
 
-import org.junit.Test
+import androidx.navigation.NavController
 
 import org.junit.Assert.*
 
@@ -9,9 +9,6 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
-    @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
+fun NavController.assertCurrentRouteName(expectedRouteName: String) {
+    assertEquals(expectedRouteName, currentBackStackEntry?.destination?.route)
 }
